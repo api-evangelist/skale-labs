@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skale.space/developers/sdks/skalenetwork-cli
+name: SKALE CLI
+binary: skale
+package: "@skalenetwork/cli"
+repository: https://github.com/skalenetwork/skale-cli
+description: >-
+  Command-line interface for interacting with the SKALE Network - built for AI agents and
+  developers. Supports --format json output for machine/agent consumption.
+install:
+  npm: npm install -g @skalenetwork/cli
+  yarn: yarn global add @skalenetwork/cli
+  pnpm: pnpm add -g @skalenetwork/cli
+  bun: bun install -g @skalenetwork/cli
+  npx: npx @skalenetwork/cli <command>
+agent_support:
+  json_output: true
+  example: skale chains list --format json
+commands:
+  - group: chains
+    description: Chain management - list chains, aggregate/compare token balances (portfolio, compare)
+  - group: read
+    description: Call read-only contract methods on SKALE or Ethereum
+  - group: token
+    description: SKL token info and balance queries
+  - group: access
+    description: Access control checks on a SKALE chain
+  - group: ima
+    description: IMA (Interchain Messaging Agent) bridge operations
+  - group: manager
+    description: SKALE Manager contract interactions
+  - group: bite
+    description: Encrypted transactions via BITE / Programmable Privacy
+  - group: txprep
+    description: Transaction preparation
+  - group: wallet
+    description: Wallet operations
+  - group: gas
+    description: Gas price queries
+  - group: explorer
+    description: Block explorer interactions
+  - group: contract
+    description: Contract interactions

@@ -1,8 +1,27 @@
 aid: skale-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/skale-labs.png
 name: Skale Labs
-description: Skale Labs is a company surfaced as a portfolio company of canaan-partners, multicoin-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Skale Labs is the team behind SKALE, an Ethereum-compatible, zero-gas-fee blockchain network
+  positioned as "the blockchain for a billion agents" with programmable privacy. SKALE runs
+  application-specific L1 SKALE Chains on Base and Ethereum with instant finality and no user gas
+  fees, and exposes an Ethereum JSON-RPC API plus first-party SDKs (BITE threshold-encryption, MPP
+  machine payments), a SKALE CLI built for AI agents, a hosted documentation MCP server, and
+  installable Agent Skills. It supports agentic commerce via the x402 payment protocol and ERC-8004
+  onchain identity, and native programmable privacy through threshold encryption (encrypted and
+  conditional transactions, confidential tokens).
 url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,17 +30,89 @@ x-backed-by:
 - multicoin-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website-note: >-
+  Corporate site skalelabs.com returned HTTP 522 at enrichment time; the live product site is
+  skale.space and developer docs are at docs.skale.space.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Blockchain
+- Web3
+- Smart Contracts
+- Developer Tools
+- JSON-RPC
+- AI Agents
+- Privacy
+- Payments
+- Cryptocurrency
+apis:
+- name: SKALE JSON-RPC API
+  description: >-
+    Ethereum-compatible JSON-RPC 2.0 API served by SKALE Chains (per-chain RPC/WSS endpoints),
+    plus SKALE Programmable Privacy methods (bite_getDecryptedTransactionData, bite_getCommitteesInfo).
+  humanURL: https://docs.skale.space/developers/resources/json-rpc-api
+  baseURL: https://skale-base.skalenodes.com/v1/base
+  tags:
+  - JSON-RPC
+  - Blockchain
+  - EVM
+  properties:
+  - type: Documentation
+    url: https://docs.skale.space/developers/resources/json-rpc-api
+  - type: Authentication
+    url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/authentication/skale-labs-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/skale-labs-domain-security.yml
 - type: Website
-  url: https://skalelabs.com
+  url: https://skale.space
+- type: DeveloperPortal
+  url: https://docs.skale.space
+- type: Documentation
+  url: https://docs.skale.space
+- type: APIReference
+  url: https://docs.skale.space/developers/resources/json-rpc-api
+- type: GettingStarted
+  url: https://docs.skale.space/developers/integrate-skale/connect-to-skale
+- type: GitHubOrganization
+  url: https://github.com/skalenetwork
+- type: Support
+  url: https://discord.gg/skale
+- type: Pricing
+  url: https://docs.skale.space/developers/run-a-skale-chain/pricing-and-payments
+- type: SDKs
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/packages/skale-labs-packages.yml
+- type: Packages
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/packages/skale-labs-packages.yml
+- type: CLI
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/cli/skale-labs-cli.yml
+- type: MCPServer
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/mcp/skale-labs-mcp.yml
+- type: AgentSkill
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/skills/_index.yml
+- type: LLMsTxt
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/llms/skale-labs-llms.txt
+- type: Sandbox
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/sandbox/skale-labs-sandbox.yml
+- type: Authentication
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/authentication/skale-labs-authentication.yml
+- type: Conventions
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/conventions/skale-labs-conventions.yml
+- type: Conformance
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/conformance/skale-labs-conformance.yml
+- type: ChangeLog
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/changelog/skale-labs-changelog.yml
+- type: Lifecycle
+  url: https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/lifecycle/skale-labs-lifecycle.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1

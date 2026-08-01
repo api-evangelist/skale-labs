@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: probe of /.well-known/ on SKALE hosts
+description: >-
+  Probed the documented SKALE hosts for standard /.well-known/ discovery documents. None returned
+  200 (docs.skale.space returns 404 for all; skale.space rate-limited at probe time). Recorded as
+  honest negative results - no discovery documents to save.
+hosts:
+  - host: https://docs.skale.space
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+  - host: https://skale.space
+    documents:
+      - {path: /.well-known/security.txt, status: 429}
+      - {path: /.well-known/openid-configuration, status: 429}
+      - {path: /.well-known/oauth-authorization-server, status: 429}
+      - {path: /.well-known/api-catalog, status: 429}
+      - {path: /.well-known/ai-plugin.json, status: 429}

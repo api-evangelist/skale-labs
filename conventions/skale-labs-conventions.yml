@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skale.space/developers/resources/json-rpc-api
+description: >-
+  Cross-cutting request/response semantics for the SKALE developer surface. SKALE exposes an
+  Ethereum-compatible JSON-RPC 2.0 API plus SDKs and a CLI, rather than a REST/OpenAPI surface,
+  so conventions follow the JSON-RPC / EVM model.
+authentication: See authentication/skale-labs-authentication.yml - public JSON-RPC needs no key; writes are wallet-signed.
+protocol:
+  style: json-rpc-2.0
+  transports: [https, wss]
+  envelope: '{ "jsonrpc": "2.0", "id": <n>, "method": "<method>", "params": [...] }'
+  response_result_field: result
+  response_error_field: error
+  ethereum_compatible: true
+chain_selection:
+  model: Each SKALE Chain is an independent L1 with its own RPC URL and chainId; select the chain by endpoint.
+  example_chain_id: 1187947933
+idempotency:
+  supported: false
+  note: >-
+    No HTTP Idempotency-Key header. Transaction replay-safety is inherent to the EVM account-nonce
+    model - a signed transaction with a given nonce can only be included once.
+pagination:
+  style: block-range
+  note: Log/event queries use eth_getLogs with fromBlock/toBlock ranges; state queries default to "latest".
+streaming:
+  supported: true
+  mechanism: eth_subscribe over WSS (newHeads, logs) - standard EVM pub/sub
+output_formats:
+  cli: SKALE CLI supports --format json for agent/machine consumption
+versioning: See lifecycle/skale-labs-lifecycle.yml - node software is semver (v5.0.0); RPC follows Ethereum JSON-RPC compatibility.
+errors: JSON-RPC 2.0 error objects (code, message); see conformance/skale-labs-conformance.yml
+privacy_extensions:
+  methods: [bite_getDecryptedTransactionData, bite_getCommitteesInfo]
+  note: SKALE-specific Programmable Privacy JSON-RPC methods beyond standard Ethereum.

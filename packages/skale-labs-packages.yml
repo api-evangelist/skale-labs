@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skale.space/developers/sdks/skalenetwork-cli
+packages:
+  - language: javascript
+    registry: npm
+    name: "@skalenetwork/cli"
+    url: https://www.npmjs.com/package/@skalenetwork/cli
+    install: npm install -g @skalenetwork/cli
+    version: 0.1.11
+    description: SKALE Network CLI Tool for developers, chain operators, and agents
+    repository: https://github.com/skalenetwork/skale-cli
+    official: true
+  - language: typescript
+    registry: npm
+    name: "@skalenetwork/bite"
+    url: https://www.npmjs.com/package/@skalenetwork/bite
+    install: npm i @skalenetwork/bite
+    version: 0.8.1
+    description: TypeScript library to encrypt EVM transactions using threshold encryption (BITE protocol / Programmable Privacy)
+    repository: https://github.com/skalenetwork/bite-ts
+    official: true
+  - language: solidity
+    registry: npm
+    name: "@skalenetwork/bite-solidity"
+    url: https://www.npmjs.com/package/@skalenetwork/bite-solidity
+    install: npm i @skalenetwork/bite-solidity
+    version: 1.0.1
+    description: Solidity helpers for Conditional Transactions, re-encryption precompiles, and onchain decryption callbacks
+    official: true
+  - language: typescript
+    registry: npm
+    name: "@skalenetwork/mpp"
+    url: https://www.npmjs.com/package/@skalenetwork/mpp
+    install: npm install @skalenetwork/mpp
+    version: 0.1.6
+    description: SKALE SDK for MPP (Machine Payment Protocol) - private, gasless payments on SKALE
+    repository: https://github.com/skalenetwork/mpp-sdk
+    official: true

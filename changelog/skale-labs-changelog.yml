@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skale.space/validators/releases/5-0-0-upgrade
+description: >-
+  SKALE ships versioned node/validator software with per-release upgrade guides. Dates are not
+  published on the upgrade pages, so entries record the version and release scope only (no invented dates).
+scheme: semver
+component: skale-node
+current_version: v5.0.0
+entries:
+  - version: v5.0.0
+    scope: node upgrade from v4.0.1
+    docs: https://docs.skale.space/validators/releases/5-0-0-upgrade
+  - version: v4.0.1
+    scope: node upgrade from v4.0.0
+    docs: https://docs.skale.space/validators/releases/4-0-1-upgrade
+  - version: v4.0.0
+    scope: node upgrade from v3.1.2
+    docs: https://docs.skale.space/validators/releases/4-0-0-upgrade
+  - version: v3.1.2
+    scope: node upgrade from v3.1.1
+    docs: https://docs.skale.space/validators/releases/3-1-2-upgrade
+  - version: v3.1.1
+    scope: node upgrade from v3.1.0 (standard + Local SGX variants)
+    docs: https://docs.skale.space/validators/releases/3-1-1-upgrade
+tooling_versions:
+  cli: 0.1.11
+  bite: 0.8.1
+  bite_solidity: 1.0.1
+  mpp: 0.1.6

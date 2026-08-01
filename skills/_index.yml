@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skale.space/get-started/build-with-ai/using-skale-skills
+install:
+  all: npx skills add skalenetwork/skills
+  single: npx skills add skalenetwork/skills --skill <skill-name>
+repository: https://github.com/skalenetwork/skills
+notes: >-
+  SKALE publishes installable Agent Skills (SKILL.md + rules/ + references/ + examples/ + assets/)
+  that give AI agents specialized capabilities for building on SKALE. Compatible with Claude Code,
+  Cursor, Copilot, Windsurf, Codex and others. Also exposed as MCP resources via the SKALE Docs MCP server.
+skills:
+  - name: programmable-privacy
+    title: Programmable Privacy
+    description: Encrypted transactions, conditional transactions (CTX), re-encryption, and confidential tokens on SKALE. Covers precompiles, Solidity helpers, and TypeScript SDK usage.
+    best_for: Privacy dApps, confidential voting, sealed-bid auctions, encrypted state, data sharing
+  - name: ima-bridging-on-skale
+    title: IMA Bridging on SKALE
+    description: Programmatic IMA (Interchain Messaging Agent) bridging for SKALE chains. Send and receive messages between SKALE chains and Ethereum.
+    best_for: Cross-chain token transfers, bridging ETH/ERC20/ERC721/ERC1155, custom messaging
+  - name: skale-cli
+    title: SKALE CLI
+    description: Operational command playbooks for SKALE CLI usage. Exact command syntax, target selection, parameter formatting, and error handling.
+    best_for: Chain management, node operations, validator commands, network administration
+  - name: x402-on-skale
+    title: x402 on SKALE
+    description: Build AI agents with x402 payments on SKALE. Covers facilitator setup, payment middleware, and agent client for monetized AI services.
+    best_for: Agent-to-agent payments, API monetization, x402 integration
+  - name: about-skale
+    title: About SKALE
+    description: Learn about SKALE Network - what it is, chain types, and gas models. Useful for understanding SKALE architecture.
+    best_for: General SKALE knowledge, architecture decisions, chain selection

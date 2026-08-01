@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skale.space/get-started/quick-start/get-testnet-tokens
+description: >-
+  SKALE exposes test environments as public testnet chains plus sFUEL/testnet-token faucets.
+  There is no test-vs-live API key separation (public JSON-RPC needs no key); testing is done
+  against dedicated testnet chains with free testnet tokens.
+test_vs_live:
+  model: separate-testnet-chains
+  live_gas_token: sFUEL (zero-cost gas) / CREDIT tokens on SKALE Base
+  test_gas_token: sFUEL (free from faucet)
+testnets:
+  - name: SKALE Base Sepolia Testnet
+    rpc: https://base-sepolia-testnet.skalenodes.com/v1/jubilant-horrible-ancha
+    chain_id: 324705682
+    chain_id_hex: '0x135A9D92'
+    explorer: https://base-sepolia-testnet-explorer.skalenodes.com/
+faucet:
+  docs: https://docs.skale.space/get-started/quick-start/get-testnet-tokens
+  notes: Testnet sFUEL is obtained free via the documented faucet flow; never invent balances or keys.
+credits:
+  buy: https://base.skalenodes.com/credits
+  notes: On SKALE Base Mainnet compute is paid via CREDIT tokens (USDC or SKL).

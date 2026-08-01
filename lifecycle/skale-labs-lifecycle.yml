@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skale.space/validators/releases/5-0-0-upgrade
+versioning:
+  scheme: semver
+  component: skale-node
+  current: v5.0.0
+  docs: https://docs.skale.space/validators/releases/5-0-0-upgrade
+  rpc_compat: Ethereum JSON-RPC compatibility (see developers/resources/json-rpc-api)
+node_types:
+  - core
+  - full
+  - archive
+  - sync
+  - supernode
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No formal REST deprecation policy / RFC 8594 Sunset headers published (JSON-RPC surface).
+status_page: null
+sla:
+  url: null
+  note: No public SLA/uptime target document found.
+deprecated_operations: []

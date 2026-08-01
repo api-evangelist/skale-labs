@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.skale.space/llms.txt
+standards:
+  - id: ethereum-json-rpc
+    conforms: true
+    evidence: Supports Ethereum JSON-RPC API across Core/Full/Archive node types (eth_*, net_version, web3_clientVersion)
+    docs: https://docs.skale.space/developers/resources/json-rpc-api
+  - id: evm
+    conforms: partial
+    evidence: EVM-compatible with documented differences (no uncle blocks, mining, or peer discovery)
+    docs: https://docs.skale.space/developers/resources/evm-differences
+  - id: erc-20
+    conforms: true
+    evidence: ERC-20 token deployment and bridging documented
+  - id: erc-721
+    conforms: true
+    evidence: ERC-721 NFT deployment and bridging documented
+  - id: erc-1155
+    conforms: true
+    evidence: ERC-1155 multi-token deployment and bridging documented
+  - id: erc-8004
+    conforms: true
+    evidence: Onchain agent identity/reputation (ERC-8004) documented for agentic builders
+    docs: https://docs.skale.space/get-started/agentic-builders/start-with-erc-8004
+  - id: x402
+    conforms: true
+    evidence: x402 agentic payment protocol supported with multiple facilitators
+    docs: https://docs.skale.space/get-started/agentic-builders/start-with-x402
+  - id: json-rpc-2.0
+    conforms: true
+    evidence: JSON-RPC 2.0 request/response envelope
