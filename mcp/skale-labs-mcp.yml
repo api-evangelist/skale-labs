@@ -7,19 +7,25 @@ server:
   transport: http
   url: https://docs.skale.space/mcp
   auth: none
-  notes: >-
-    Hosted, no-auth MCP server exposing SKALE documentation to AI agents. No installation,
-    npm packages, environment variables, or private keys needed. Also exposes SKALE Skills
-    as MCP resources so agents can discover and access skill files without installing them.
+  notes: Hosted, no-auth MCP server exposing SKALE documentation to AI agents. No installation, npm packages,
+    environment variables, or private keys needed. Also exposes SKALE Skills as MCP resources so agents
+    can discover and access skill files without installing them.
 install:
   claude_code: claude mcp add --transport http "SKALE Docs" https://docs.skale.space/mcp
   claude_desktop: Settings -> Connectors -> Add custom connector -> URL https://docs.skale.space/mcp
 tools:
-  - name: search
-    description: Search across all SKALE documentation to find relevant pages
-  - name: query_docs_filesystem
-    description: Read full page content, browse the doc structure, and extract specific sections
+- name: search
+  description: Search across all SKALE documentation to find relevant pages
+- name: query_docs_filesystem
+  description: Read full page content, browse the doc structure, and extract specific sections
 resources:
-  - name: skale-skills
-    description: SKALE Skills (programmable-privacy, ima-bridging, skale-cli, x402, about-skale) exposed as MCP resources
-    source: https://github.com/skalenetwork/skills
+- name: skale-skills
+  description: SKALE Skills (programmable-privacy, ima-bridging, skale-cli, x402, about-skale) exposed
+    as MCP resources
+  source: https://github.com/skalenetwork/skills
+deployment:
+  mode: local-stdio
+  verified: searched
+  tools: 2
+  checked: '2026-08-12'
+  source: catalog MCP census
