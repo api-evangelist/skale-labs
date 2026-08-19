@@ -33,7 +33,7 @@ x-tier-reason: portfolio-lead
 x-website-note: >-
   Corporate site skalelabs.com returned HTTP 522 at enrichment time; the live product site is
   skale.space and developer docs are at docs.skale.space.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
