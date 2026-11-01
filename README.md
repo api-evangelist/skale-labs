@@ -64,6 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Skale Labs is a company surfaced as a portfolio company of canaan-partners, multicoin-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Skale Labs is the team behind SKALE, an Ethereum-compatible, zero-gas-fee blockchain network positioned as "the blockchain for a billion agents" with programmable privacy. SKALE runs application-specific L1 SKALE Chains on Base and Ethereum with instant finality and no user gas fees, and exposes an Ethereum JSON-RPC API plus first-party SDKs (BITE threshold-encryption, MPP machine payments), a SKALE CLI built for AI agents, a hosted documentation MCP server, and installable Agent Skills. It supports agentic commerce via the x402 payment protocol and ERC-8004 onchain identity, and native programmable privacy through threshold encryption (encrypted and conditional transactions, confidential tokens).
 
-Backed by: canaan-partners, multicoin-capital — https://skalelabs.com
+**Areas:** Company · Blockchain · Web3 · Smart Contracts · Developer Tools · JSON-RPC · AI Agents · Privacy · Payments · Cryptocurrency
+
+## Skale Labs on APIs.io
+
+Everything profiled for Skale Labs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/skale-labs/](https://apis.io/providers/skale-labs/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [SKALE JSON-RPC API](https://apis.io/apis/skale-labs/skale-json-rpc-api/) — Ethereum-compatible JSON-RPC 2.0 API served by SKALE Chains (per-chain RPC/WSS endpoints), plus SKALE Programmable Privacy methods…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [skale-labs-mcp.yml](https://apis.io/servers/skale-labs/skale-labs-mcp-yml/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Skale Labs Authentication](https://apis.io/security/skale-labs/skale-labs-authentication/)
+- [Skale Labs Domain Security](https://apis.io/security/skale-labs/skale-labs-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://skale.space)
+- [Documentation](https://docs.skale.space)
+- [Getting started](https://docs.skale.space/developers/integrate-skale/connect-to-skale)
+- [API reference](https://docs.skale.space/developers/resources/json-rpc-api)
+- [Pricing](https://docs.skale.space/developers/run-a-skale-chain/pricing-and-payments)
+- [Support](https://discord.gg/skale)
+- [Changelog](https://raw.githubusercontent.com/api-evangelist/skale-labs/refs/heads/main/changelog/skale-labs-changelog.yml)
+- [GitHub](https://github.com/skalenetwork)
+
+## API Evangelist rating
+
+**Kin Score 26.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 78.6 |
+| Access clarity | 10.5 |
+
+**Agent readiness 9.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.9** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/skale-labs/](https://apis.io/providers/skale-labs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Skale Labs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/skale-labs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
